@@ -1,10 +1,10 @@
-package upc.fib.pes.backend
+package upc.fib.pes.grup121
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ApiBackendApplicationTests {
+class Grup121ApplicationTests {
 
 	@Test
 	fun contextLoads() {

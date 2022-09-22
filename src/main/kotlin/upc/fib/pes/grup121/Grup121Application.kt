@@ -1,11 +1,11 @@
-package upc.fib.pes.backend
+package upc.fib.pes.grup121
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ApiBackendApplication
+class Grup121Application
 
 fun main(args: Array<String>) {
-	runApplication<ApiBackendApplication>(*args)
+	runApplication<Grup121Application>(*args)
 }
