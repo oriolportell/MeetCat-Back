@@ -9,7 +9,7 @@ import upc.fib.pes.grup121.service.EsdevenimentService
 @RestController
 class EsdevenimentController (val service: EsdevenimentService){
 
-    @GetMapping("/esdeveniments")
+    @GetMapping
     fun getEsdeveniments(): List<Esdeveniment> = service.getAll()
 
     @GetMapping("/{id}")
