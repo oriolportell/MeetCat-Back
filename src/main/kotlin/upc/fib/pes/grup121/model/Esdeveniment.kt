@@ -7,7 +7,7 @@ import javax.persistence.*
 @DynamicUpdate
 @Table(name = "esdeveniments")
 data class Esdeveniment(
-    @Id  @GeneratedValue(strategy = GenerationType.AUTO) var id: Long,
+    @Id  @GeneratedValue(strategy = GenerationType.AUTO) var id: Long?,
     val titol: String,
     val descripcio: String
 )
