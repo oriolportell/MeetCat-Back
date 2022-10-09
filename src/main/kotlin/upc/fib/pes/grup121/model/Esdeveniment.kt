@@ -1,10 +1,10 @@
 package upc.fib.pes.grup121.model
 
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.Table
+import org.hibernate.annotations.DynamicUpdate
+import javax.persistence.*
 
+@Entity
+@DynamicUpdate
 @Table(name = "esdeveniments")
 data class Esdeveniment(
     @Id  @GeneratedValue(strategy = GenerationType.AUTO) var id: Long,
