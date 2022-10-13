@@ -12,7 +12,11 @@ class EsdevenimentService(val repository: EsdevenimentRepository) {
 
     fun getAll(): List<Esdeveniment> = repository.findAll()
 
-    fun getById(id: Long): Esdeveniment = repository.findById(id).get()
+    fun getById(id: Long): Esdeveniment {
+        return if (repository.existsById(id)) {
+            repository.findById(id).get()
+        } else throw ResponseStatusException(HttpStatus.NOT_FOUND)
+    }
 
     fun create(esdeveniment: Esdeveniment): Esdeveniment {
         esdeveniment.createdDate = LocalDateTime.now()
