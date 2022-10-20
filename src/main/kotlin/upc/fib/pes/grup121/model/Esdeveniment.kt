@@ -14,9 +14,12 @@ import javax.persistence.*
 data class Esdeveniment(
     @Id  @GeneratedValue(strategy = GenerationType.AUTO) var id: Long?,
     var titol: String,
+    var subtitol: String,
     var descripcio: String,
     var data: LocalDateTime,
     var location: String,
+    var address: String,
+    var link: String,
     var lastUpdate: LocalDateTime? = null,
     var createdDate: LocalDateTime? = null
 )
