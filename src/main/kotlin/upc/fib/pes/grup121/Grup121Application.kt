@@ -7,13 +7,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 @SpringBootApplication
-class Grup121Application : SpringBootServletInitializer()
+class Grup121Application
 
 fun main(args: Array<String>) {
 	runApplication<Grup121Application>(*args)
 }
 
-@Override
-fun configure(builder: SpringApplicationBuilder): SpringApplicationBuilder? {
-	return builder.sources(Grup121Application::class.java)
-}
